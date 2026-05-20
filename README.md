@@ -16,12 +16,12 @@ I work on two interconnected problems. The first is taphonomic: what happens to 
 
 | Category | Skills & Tools |
 | --- | --- |
-| **Languages** | Python, R, JMP, MATLAB/Octave, Bash |
-| **Machine Learning & AI** | PyTorch, TensorFlow, SimCLR, MoCo v2, U-Net, ResNet,  Scikit-learn |
-| **Imaging & Spectroscopy** | CT segmentation (Avizo, Meshlab, Blender), UV/Laser-Stimulated Fluorescence, ToF-SIMS, FT-IR, Raman, SEM/EDX, 3D Photogrammetry |
-| **Bioinformatics & Statistics** | Macroevolutionary modelling, Geometric Morphometrics, Decay/Maturation Experiments |
+| **Languages** | Python, R, C++/C,  Bash |
+| **Machine Learning & AI** | PyTorch, TensorFlow, SimCLR v1, MoCo v2, U-Net, ResNet,  Scikit-learn |
+| **Imaging & Spectroscopy** | CT segmentation (Avizo, Meshlab, Blender), UV/Laser-Stimulated Fluorescence, ToF-SIMS, FT-IR, Raman, SEM |
+| ** Data Analysis** | Decay/Maturation Experiments, Spectroscopy/Spectrometry Data Analysis, Macroevolutionary modelling, Geometric Morphometrics, |
 | **Infrastructure** | GitHub Actions CI/CD, HPC (BlueBEAR, SLURM), GNU GPL open-source workflows |
-| **Visualisation** |  Python (matplotlib/seaborn), R (ggplot2), Blender |
+| **Visualisation** |  Python (matplotlib/seaborn), R (ggplot2), Adobe Photoshop & Illustrator, Blender |
 
 ---
 
