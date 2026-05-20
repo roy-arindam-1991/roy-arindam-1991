@@ -1,8 +1,8 @@
-# Arindam Roy, Ph.D. | Researcher
+# Arindam Roy, Ph.D.
 
 **Palaeobiology | Artificial Intelligence | Functional Morphology | Biomechanics | Taphonomy | Biogeochemistry**
 
-I am a palaeobiologist and computational researcher working at the intersection of deep learning, experimental taphonomy, and vertebrate palaeontology. My research asks how biological information — colour, morphology, chemistry — survives the fossilisation process, and how modern AI can be used to extract that information at scale. Currently a Marie Skłodowska-Curie Actions Postdoctoral Fellow at the University of Birmingham, I develop self-supervised deep learning pipelines for automated CT segmentation of fossil specimens, with the broader goal of breaking the manual bottleneck that constrains large-scale morphological data collection in palaeontology.
+I am a palaeobiologist and computational researcher working at the intersection of deep learning, experimental taphonomy, and vertebrate palaeontology. My research asks how biological information — pigmentation, morphology, chemistry — survives the fossilisation process, and how modern AI can be used to extract that information at scale. Currently a Marie Skłodowska-Curie Actions Postdoctoral Fellow at the University of Birmingham, I develop self-supervised deep learning pipelines for automated CT segmentation of fossil specimens, with the broader goal of breaking the manual bottleneck that constrains large-scale morphological data collection in palaeontology.
 
 ---
 
@@ -17,11 +17,11 @@ I work on two interconnected problems. The first is taphonomic: what happens to 
 | Category | Skills & Tools |
 | --- | --- |
 | **Languages** | Python, R, JMP, MATLAB/Octave, Bash |
-| **Machine Learning & AI** | PyTorch, TensorFlow, SimCLR, MoCo v2, U-Net, ResNet, VAE, Scikit-learn |
+| **Machine Learning & AI** | PyTorch, TensorFlow, SimCLR, MoCo v2, U-Net, ResNet,  Scikit-learn |
 | **Imaging & Spectroscopy** | CT segmentation (Avizo, Meshlab, Blender), UV/Laser-Stimulated Fluorescence, ToF-SIMS, FT-IR, Raman, SEM/EDX, 3D Photogrammetry |
 | **Bioinformatics & Statistics** | Macroevolutionary modelling, Geometric Morphometrics, Decay/Maturation Experiments |
-| **Infrastructure** | GitHub Actions CI/CD, Docker, HPC (BlueBEAR, SLURM), GNU GPL open-source workflows |
-| **Visualisation** | ggplot2, Python (matplotlib/seaborn), R, Blender |
+| **Infrastructure** | GitHub Actions CI/CD, HPC (BlueBEAR, SLURM), GNU GPL open-source workflows |
+| **Visualisation** |  Python (matplotlib/seaborn), R (ggplot2), Blender |
 
 ---
 
@@ -31,11 +31,10 @@ I work on two interconnected problems. The first is taphonomic: what happens to 
 
 ### Deep Learning for Fossil CT Segmentation (DEEPCTSEG)
 
-- **[DEEPCTSEG v1.0.0 — SimCLR-v1 + U-Net](https://github.com/roy-arindam-1991/Simclr-v1-50k-automated-pipeline)**: Can self-supervised contrastive learning reduce the expert-annotation bottleneck in fossil CT segmentation? End-to-end automated pipeline implementing SimCLR v1 (Chen et al., 2020) — stochastic data augmentation, a shared ResNet encoder, MLP projection head, and NT-Xent contrastive loss — followed by U-Net segmentation with deterministic masking, trained on 50,000 fossil CT images. Provides a reproducible benchmark for label-efficient fossil segmentation at scale. (DOI: [10.5281/zenodo.20242346](https://doi.org/10.5281/zenodo.20242346). GNU GPL v3.0.)
+- **[DEEPCTSEG v1.0.0 — SimCLR-v1 + U-Net](https://github.com/roy-arindam-1991/Simclr-v1-50k-automated-pipeline)**: Can self-supervised contrastive learning reduce the expert-annotation bottleneck in fossil CT segmentation? End-to-end automated pipeline implementing SimCLR v1 — stochastic data augmentation, a shared ResNet encoder, MLP projection head, and NT-Xent contrastive loss — followed by U-Net segmentation with deterministic masking, trained on 50,000 fossil CT images. Provides a reproducible benchmark for label-efficient fossil segmentation at scale. (DOI: [10.5281/zenodo.20242346](https://doi.org/10.5281/zenodo.20242346). GNU GPL v3.0.)
 
-- **[DEEPCTSEG v1.1.0 — MoCo-v2 + U-Net](https://github.com/roy-arindam-1991/MoCo-v2-50k-automated-pipeline)**: Does Momentum Contrast outperform SimCLR when memory efficiency and large negative-sample queues matter? Automated pipeline implementing MoCo v2 (Chen et al., 2020) — a momentum encoder updated via exponential moving average, a dynamic negative-sample queue of up to 65,536 keys, and an MLP projection head — trained on 50,000 fossil CT images under matched data conditions to v1.0.0. Designed for direct controlled comparison of contrastive learning strategies. (DOI: [10.5281/zenodo.20255058](https://doi.org/10.5281/zenodo.20255058).)
+- **[DEEPCTSEG v1.1.0 — MoCo-v2 + U-Net](https://github.com/roy-arindam-1991/MoCo-v2-50k-automated-pipeline)**: Does Momentum Contrast outperform SimCLR when memory efficiency and large negative-sample queues matter? Automated pipeline implementing MoCo v2 — a momentum encoder updated via exponential moving average, a dynamic negative-sample queue of up to 65,536 keys, and an MLP projection head — trained on 50,000 fossil CT images under matched data conditions to v1.0.0. Designed for direct controlled comparison of contrastive learning strategies. (DOI: [10.5281/zenodo.20255058](https://doi.org/10.5281/zenodo.20255058).)
 
-*Both pipelines underpin the preprint: Roy et al. (2026) "Breaking the Bottleneck: Fully-automated CT Segmentation of Fossils using Self-Supervised Deep Learning." Submitted to Nature Machine Intelligence.*
 
 ---
 
@@ -61,17 +60,8 @@ I work on two interconnected problems. The first is taphonomic: what happens to 
 
 ### Preprints & Submitted
 
-- **Roy, A.**, Ghosh, P., Benson, R.J., Weston, F., Hartley, B., Salili-James, A., Poon, S.T.S., Walsh, S.A., Maidment, S., & Butler, R.J. (2026). Breaking the Bottleneck: Fully-automated CT Segmentation of Fossils using Self-Supervised Deep Learning. *Submitted to Nature Machine Intelligence.*
-
 - **Roy, A.**, Pittman, M., Musa, M., Al-Kindi, S., Kaye, T. G., & Saitta, E. T. (2026). A multi-spectroscopic investigation into the diagenesis of avian polyene pigments: simulated maturation, chemical pathways, and palaeontological implications. *Scientific Reports* (In Review). Preprint: *Research Square* 10.21203/rs.3.rs-7900994/v1.
 
-### Citation Metrics (Google Scholar)
-
-| Metric | Cumulative | Since 2021 |
-| --- | --- | --- |
-| Raw citations | 96 | 87 |
-| h-index | 4 | 4 |
-| i10-index | 3 | 3 |
 
 ---
 
@@ -117,7 +107,7 @@ I work on two interconnected problems. The first is taphonomic: what happens to 
 
 ## Media & Public Engagement
 
-**Written coverage:** New York Times, CNN World, Al Jazeera, EurekaAlert!, Yahoo! News, Phys.Org, The Wire Science India.
+**Written coverage:** New York Times, CNN World, Al Jazeera, EurekaAlert!, Yahoo! News, Phys.Org, The Wire Science India, Deccan Herald.
 
 **Scientific consultation for feature films:** *Professor Shanku o El Dorado* (2019, dir. Sandip Ray); *Double Feluda* (2016, dir. Sandip Ray).
 
